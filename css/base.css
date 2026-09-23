@@ -356,6 +356,30 @@ main.ticket-wrap {
   padding: 1.25rem;
 }
 
+.project-card--text {
+  border-top: 3px solid var(--ink);
+}
+
+.project-body .project-status {
+  align-self: flex-start;
+  margin: 0 0 0.75rem;
+  padding: 0.1rem 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+}
+
+.project-body .project-status--progress {
+  color: var(--accent-dark);
+}
+
+.project-body .project-status--nda {
+  color: var(--ink-muted);
+}
+
 .project-body h3 {
   margin: 0 0 0.5rem;
   font-size: 1.15rem;

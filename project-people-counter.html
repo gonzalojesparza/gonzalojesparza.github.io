@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IR Break-Beam People Counter | Wild Wire Substation</title>
+  <meta name="description" content="Write-up: an infrared break-beam people counter with direction detection, by Gonzalo Esparza.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="IR Break-Beam People Counter | Wild Wire Substation">
+  <meta property="og:description" content="Design, build and testing of an infrared break-beam people counter.">
+  <meta property="og:image" content="https://your-username.github.io/assets/img/og-image.png">
+  <meta name="theme-color" content="#111213">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Oswald:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/writeup.css">
+  <script src="js/griddle.js" defer></script>
+  <script src="js/audio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Wild Wire <span>Substation</span></a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="https://www.linkedin.com/in/gonzalo-j-esparza/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="ticket-wrap">
+    <article class="ticket">
+      <a class="back-link" href="projects.html">&larr; Back to projects</a>
+      <header class="ticket-header">
+        <p class="kicker">Project write-up &middot; From the Bench</p>
+        <h1>IR Break-Beam People Counter</h1>
+      </header>
+
+      <div class="writeup">
+        <p class="writeup-summary">
+          [Two-sentence summary: what you built, why, and the headline result, e.g.
+          counting accuracy over a test run.]
+        </p>
+
+        <dl class="at-a-glance">
+          <div><dt>Role</dt><dd>[Solo / team of N, your part]</dd></div>
+          <div><dt>Timeline</dt><dd>[Month Year &ndash; Month Year]</dd></div>
+          <div><dt>Tools</dt><dd>[MCU, IR parts, CAD, languages]</dd></div>
+          <div><dt>Result</dt><dd>[e.g. N% accuracy over N passes]</dd></div>
+        </dl>
+
+        <nav class="toc" aria-label="Contents">
+          <p>Contents</p>
+          <ol>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+            <li><a href="#design">System design</a></li>
+            <li><a href="#hardware">Hardware</a></li>
+            <li><a href="#firmware">Firmware and counting logic</a></li>
+            <li><a href="#results">Testing and results</a></li>
+            <li><a href="#lessons">Challenges and lessons learned</a></li>
+            <li><a href="#future">Future work</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="overview">Overview</h2>
+        <p>
+          [The problem: where the counter is used and why counting people matters
+          there. Then a short description of your approach.]
+        </p>
+
+        <h2 id="requirements">Requirements</h2>
+        <ul>
+          <li>[Detect a person crossing the doorway]</li>
+          <li>[Determine direction: entering or leaving]</li>
+          <li>[Target accuracy, power budget, cost, mounting constraints]</li>
+          <li>[Output: display, logging, wireless, etc.]</li>
+        </ul>
+
+        <h2 id="design">System design</h2>
+        <p>
+          [How the pieces fit together: IR emitters, receivers, signal conditioning,
+          microcontroller, output. Explain why you used two beams, if you did, and
+          how their spacing was chosen.]
+        </p>
+        <figure>
+          <img src="assets/img/projects/placeholder.svg" alt="[Block diagram of the people counter]" loading="lazy">
+          <figcaption><strong>Figure 1.</strong> [Block diagram of the system.]</figcaption>
+        </figure>
+
+        <h2 id="hardware">Hardware</h2>
+        <h3>IR emitter and receiver</h3>
+        <p>
+          [Parts used, wavelength, modulation frequency if the beam is modulated,
+          and how you rejected ambient light.]
+        </p>
+        <h3>Circuit</h3>
+        <p>
+          [Driver circuit, receiver conditioning, component value choices and the
+          math behind them.]
+        </p>
+        <figure>
+          <img src="assets/img/projects/placeholder.svg" alt="[Schematic of the emitter and receiver circuits]" loading="lazy">
+          <figcaption><strong>Figure 2.</strong> [Schematic.]</figcaption>
+        </figure>
+
+        <h2 id="firmware">Firmware and counting logic</h2>
+        <p>
+          [How break events become counts: the order the beams break in, debouncing,
+          timeouts, and edge cases like someone stopping in the doorway or two
+          people passing close together.]
+        </p>
+<pre><code>// [Paste a short, representative snippet, e.g. the direction state machine]
+</code></pre>
+
+        <h2 id="results">Testing and results</h2>
+        <p>[How you tested: number of passes, conditions, how ground truth was recorded.]</p>
+        <div class="table-wrap">
+          <table>
+            <caption>[Table 1. Counting accuracy by test scenario.]</caption>
+            <thead>
+              <tr><th>Scenario</th><th>Actual</th><th>Counted</th><th>Accuracy</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>[Single person, walking]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td></tr>
+              <tr><td>[Single person, running]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td></tr>
+              <tr><td>[Two people, close together]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td></tr>
+              <tr><td>[Bright ambient light]</td><td>[ ]</td><td>[ ]</td><td>[ ]</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure>
+          <img src="assets/img/projects/placeholder.svg" alt="[Photo of the finished counter installed]" loading="lazy">
+          <figcaption><strong>Figure 3.</strong> [The finished build.]</figcaption>
+        </figure>
+
+        <h2 id="lessons">Challenges and lessons learned</h2>
+        <p>[What went wrong, how you debugged it, and what you'd do differently.]</p>
+
+        <h2 id="future">Future work</h2>
+        <ul>
+          <li>[Improvement one]</li>
+          <li>[Improvement two]</li>
+        </ul>
+
+        <footer class="writeup-footer">
+          <a class="btn secondary" href="projects.html">&larr; All projects</a>
+        </footer>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span data-year>2026</span> Gonzalo Esparza</p>
+  </footer>
+</body>
+</html>

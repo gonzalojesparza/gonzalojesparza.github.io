@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Circularly Polarized Antennas | Wild Wire Substation</title>
+  <meta name="description" content="Write-up: macrofabricated circularly polarized antennas evaluated for rotational robustness, by Gonzalo Esparza.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Circularly Polarized Antennas | Wild Wire Substation">
+  <meta property="og:description" content="Design, fabrication and rotational testing of circularly polarized antennas.">
+  <meta property="og:image" content="https://your-username.github.io/assets/img/og-image.png">
+  <meta name="theme-color" content="#111213">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Oswald:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/writeup.css">
+  <script src="js/griddle.js" defer></script>
+  <script src="js/audio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Wild Wire <span>Substation</span></a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="https://www.linkedin.com/in/gonzalo-j-esparza/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="ticket-wrap">
+    <article class="ticket">
+      <a class="back-link" href="projects.html">&larr; Back to projects</a>
+      <header class="ticket-header">
+        <p class="kicker">Project write-up &middot; From the Bench</p>
+        <h1>Circularly Polarized Antennas</h1>
+      </header>
+
+      <div class="writeup">
+        <p class="writeup-summary">
+          [Two-sentence summary: the antennas you built, the question you tested
+          (how the link holds up under rotation), and the headline finding.]
+        </p>
+
+        <dl class="at-a-glance">
+          <div><dt>Role</dt><dd>[Solo / team of N, your part]</dd></div>
+          <div><dt>Timeline</dt><dd>[Month Year &ndash; Month Year]</dd></div>
+          <div><dt>Frequency</dt><dd>[Center frequency / band]</dd></div>
+          <div><dt>Tools</dt><dd>[Simulator, VNA, fab method]</dd></div>
+        </dl>
+
+        <nav class="toc" aria-label="Contents">
+          <p>Contents</p>
+          <ol>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#design">Design and simulation</a></li>
+            <li><a href="#fabrication">Fabrication</a></li>
+            <li><a href="#setup">Measurement setup</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#discussion">Discussion</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="overview">Overview</h2>
+        <p>
+          [The motivation: applications where the two ends of a link can rotate
+          relative to each other, and the goal of the project.]
+        </p>
+
+        <h2 id="background">Background</h2>
+        <p>
+          [Brief primer: linear vs. circular polarization, why a linearly polarized
+          link fades as one antenna rotates (polarization mismatch), and how circular
+          polarization avoids that. Define axial ratio and the metrics you used.]
+        </p>
+
+        <h2 id="design">Design and simulation</h2>
+        <p>
+          [Antenna type, how circular polarization is produced (e.g. feed
+          arrangement or geometry), substrate or materials, key dimensions and how
+          you arrived at them.]
+        </p>
+        <figure>
+          <img src="assets/img/projects/placeholder.svg" alt="[Antenna geometry with key dimensions labeled]" loading="lazy">
+          <figcaption><strong>Figure 1.</strong> [Antenna geometry and dimensions.]</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/projects/placeholder.svg" alt="[Simulated reflection coefficient and axial ratio]" loading="lazy">
+          <figcaption><strong>Figure 2.</strong> [Simulated S11 and axial ratio vs. frequency.]</figcaption>
+        </figure>
+
+        <h2 id="fabrication">Fabrication</h2>
+        <p>
+          [How the antennas were macrofabricated: materials, process steps,
+          tolerances, and any issues that affected the finished parts.]
+        </p>
+        <figure>
+          <img src="assets/img/projects/placeholder.svg" alt="[Photo of the fabricated antennas]" loading="lazy">
+          <figcaption><strong>Figure 3.</strong> [The fabricated antennas.]</figcaption>
+        </figure>
+
+        <h2 id="setup">Measurement setup</h2>
+        <p>
+          [Instruments (e.g. VNA, signal generator, spectrum analyzer), test range,
+          antenna separation, and how rotation angle was set and measured. Include
+          a linearly polarized reference link if you compared against one.]
+        </p>
+        <figure>
+          <img src="assets/img/projects/placeholder.svg" alt="[Photo or diagram of the rotation test setup]" loading="lazy">
+          <figcaption><strong>Figure 4.</strong> [Measurement setup.]</figcaption>
+        </figure>
+
+        <h2 id="results">Results</h2>
+        <h3>Impedance match</h3>
+        <p>[Measured vs. simulated S11, bandwidth, and any frequency shift.]</p>
+        <h3>Rotational robustness</h3>
+        <p>[How received power changed with rotation for each antenna pair.]</p>
+        <div class="table-wrap">
+          <table>
+            <caption>[Table 1. Received power vs. rotation angle.]</caption>
+            <thead>
+              <tr><th>Rotation</th><th>CP link (dBm)</th><th>Linear reference (dBm)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>0&deg;</td><td>[ ]</td><td>[ ]</td></tr>
+              <tr><td>45&deg;</td><td>[ ]</td><td>[ ]</td></tr>
+              <tr><td>90&deg;</td><td>[ ]</td><td>[ ]</td></tr>
+              <tr><td>135&deg;</td><td>[ ]</td><td>[ ]</td></tr>
+              <tr><td>180&deg;</td><td>[ ]</td><td>[ ]</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure>
+          <img src="assets/img/projects/placeholder.svg" alt="[Plot of received power vs. rotation angle]" loading="lazy">
+          <figcaption><strong>Figure 5.</strong> [Received power vs. rotation angle.]</figcaption>
+        </figure>
+
+        <h2 id="discussion">Discussion</h2>
+        <p>
+          [Interpret the results: how close the antennas came to ideal circular
+          polarization, sources of error (fabrication tolerance, multipath, cable
+          movement), and how they compare to simulation.]
+        </p>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>[The takeaway in two or three sentences, and what you'd do next.]</p>
+
+        <footer class="writeup-footer">
+          <a class="btn secondary" href="projects.html">&larr; All projects</a>
+        </footer>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span data-year>2026</span> Gonzalo Esparza</p>
+  </footer>
+</body>
+</html>
