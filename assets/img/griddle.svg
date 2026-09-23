@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <filter id="brushed" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0015 0.9" numOctaves="3" seed="4"/>
+      <feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 0 0.55"/>
+    </filter>
+    <filter id="seasoning" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0035 0.0045" numOctaves="4" seed="11"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0 0.05  0 0 -1.6 0 1.05"/>
+    </filter>
+    <filter id="patina" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="27"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.3  0 0 0 0 0.18  1.2 0 0 0 -0.62"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="2"/>
+      <feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 0 0.12"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+
+    <linearGradient id="steelV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d4d7da"/>
+      <stop offset="0.35" stop-color="#a9aeb3"/>
+      <stop offset="0.7" stop-color="#8d9297"/>
+      <stop offset="1" stop-color="#6c7176"/>
+    </linearGradient>
+    <linearGradient id="steelH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7a7f84"/>
+      <stop offset="0.5" stop-color="#b3b8bd"/>
+      <stop offset="1" stop-color="#7a7f84"/>
+    </linearGradient>
+    <linearGradient id="ledge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c3c7cb"/>
+      <stop offset="0.15" stop-color="#9ea3a8"/>
+      <stop offset="1" stop-color="#5f6469"/>
+    </linearGradient>
+    <radialGradient id="plateBase" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#37383a"/>
+      <stop offset="0.6" stop-color="#28292b"/>
+      <stop offset="1" stop-color="#161718"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.10"/>
+      <stop offset="0.35" stop-color="#fff" stop-opacity="0.02"/>
+      <stop offset="0.6" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="splashShadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sideShadowL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sideShadowR" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#000" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="trough" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0d0c"/>
+      <stop offset="0.45" stop-color="#262421"/>
+      <stop offset="0.55" stop-color="#4a4336"/>
+      <stop offset="0.7" stop-color="#1c1a18"/>
+      <stop offset="1" stop-color="#3b3d40"/>
+    </linearGradient>
+    <radialGradient id="heatTint" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7a4b22" stop-opacity="0.22"/>
+      <stop offset="0.7" stop-color="#3a2a1c" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="edgeCarbon" cx="50%" cy="50%" r="65%">
+      <stop offset="0.6" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.6"/>
+    </radialGradient>
+    <radialGradient id="knob" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#4a4a4a"/>
+      <stop offset="0.6" stop-color="#1a1a1a"/>
+      <stop offset="1" stop-color="#050505"/>
+    </radialGradient>
+    <linearGradient id="bezel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f3f4"/>
+      <stop offset="0.5" stop-color="#8f9499"/>
+      <stop offset="1" stop-color="#e0e2e4"/>
+    </linearGradient>
+    <clipPath id="plateClip">
+      <rect x="56" y="100" width="1488" height="640"/>
+    </clipPath>
+  </defs>
+
+  <!-- Stainless body -->
+  <rect width="1600" height="900" rx="14" fill="url(#steelH)"/>
+
+  <!-- Backsplash -->
+  <rect x="0" y="0" width="1600" height="100" rx="14" fill="url(#steelV)"/>
+  <rect x="0" y="0" width="1600" height="100" rx="14" filter="url(#brushed)" style="mix-blend-mode:overlay"/>
+  <rect x="0" y="2" width="1600" height="3" fill="#fff" opacity="0.5"/>
+  <rect x="0" y="94" width="1600" height="6" fill="#4d5156"/>
+
+  <!-- Side splashes -->
+  <rect x="0" y="96" width="56" height="650" fill="url(#steelV)"/>
+  <rect x="1544" y="96" width="56" height="650" fill="url(#steelV)"/>
+  <rect x="0" y="96" width="56" height="650" filter="url(#brushed)" style="mix-blend-mode:overlay"/>
+  <rect x="1544" y="96" width="56" height="650" filter="url(#brushed)" style="mix-blend-mode:overlay"/>
+  <rect x="52" y="96" width="4" height="650" fill="#43474b"/>
+  <rect x="1544" y="96" width="4" height="650" fill="#43474b"/>
+
+  <!-- Cooking plate -->
+  <g clip-path="url(#plateClip)">
+    <rect x="56" y="100" width="1488" height="640" fill="url(#plateBase)"/>
+    <rect x="56" y="100" width="1488" height="640" filter="url(#seasoning)" opacity="0.85"/>
+    <rect x="56" y="100" width="1488" height="640" filter="url(#patina)" opacity="0.3"/>
+
+    <!-- Burner heat zones -->
+    <ellipse cx="300" cy="420" rx="260" ry="250" fill="url(#heatTint)"/>
+    <ellipse cx="650" cy="420" rx="260" ry="250" fill="url(#heatTint)"/>
+    <ellipse cx="1000" cy="420" rx="260" ry="250" fill="url(#heatTint)"/>
+    <ellipse cx="1320" cy="420" rx="260" ry="250" fill="url(#heatTint)"/>
+
+    <!-- Scraper marks -->
+    <g fill="none" stroke="#d9d4cc" stroke-linecap="round">
+      <path d="M90 170 C 420 158, 820 176, 1280 166" stroke-width="3" opacity="0.05"/>
+      <path d="M140 205 C 520 196, 960 214, 1500 200" stroke-width="2" opacity="0.04"/>
+      <path d="M70 262 C 380 250, 700 270, 1120 258" stroke-width="4" opacity="0.035"/>
+      <path d="M300 300 C 700 292, 1100 310, 1520 296" stroke-width="2" opacity="0.05"/>
+      <path d="M80 356 C 460 346, 880 366, 1340 352" stroke-width="3" opacity="0.04"/>
+      <path d="M200 404 C 560 396, 1000 412, 1480 402" stroke-width="2" opacity="0.045"/>
+      <path d="M90 462 C 400 452, 760 470, 1200 458" stroke-width="5" opacity="0.03"/>
+      <path d="M380 508 C 760 500, 1160 516, 1520 506" stroke-width="2" opacity="0.05"/>
+      <path d="M70 560 C 420 552, 860 570, 1300 556" stroke-width="3" opacity="0.04"/>
+      <path d="M160 612 C 540 604, 980 620, 1470 608" stroke-width="2" opacity="0.045"/>
+      <path d="M90 668 C 440 660, 820 676, 1260 664" stroke-width="4" opacity="0.03"/>
+      <path d="M520 700 C 860 694, 1200 706, 1510 698" stroke-width="2" opacity="0.04"/>
+    </g>
+    <g fill="none" stroke="#000" stroke-linecap="round" opacity="0.12">
+      <path d="M120 230 C 500 222, 900 238, 1400 226" stroke-width="2"/>
+      <path d="M100 430 C 480 422, 920 438, 1450 426" stroke-width="2"/>
+      <path d="M140 640 C 520 632, 940 646, 1420 636" stroke-width="2"/>
+    </g>
+
+    <!-- Oil sheen and pooled grease -->
+    <rect x="56" y="100" width="1488" height="640" fill="url(#sheen)"/>
+    <g filter="url(#soft)" fill="#c9a86a">
+      <ellipse cx="240" cy="640" rx="120" ry="40" opacity="0.10"/>
+      <ellipse cx="880" cy="690" rx="200" ry="34" opacity="0.08"/>
+      <ellipse cx="1420" cy="250" rx="90" ry="60" opacity="0.08"/>
+      <ellipse cx="560" cy="180" rx="140" ry="30" opacity="0.06"/>
+    </g>
+    <g filter="url(#soft)" fill="#fff">
+      <ellipse cx="420" cy="170" rx="260" ry="24" opacity="0.06"/>
+      <ellipse cx="1180" cy="150" rx="200" ry="18" opacity="0.05"/>
+    </g>
+
+    <rect x="56" y="100" width="1488" height="640" filter="url(#grain)"/>
+    <rect x="56" y="100" width="1488" height="640" fill="url(#edgeCarbon)"/>
+
+    <!-- Shadows cast by the splash guards -->
+    <rect x="56" y="100" width="1488" height="44" fill="url(#splashShadow)"/>
+    <rect x="56" y="100" width="34" height="640" fill="url(#sideShadowL)"/>
+    <rect x="1510" y="100" width="34" height="640" fill="url(#sideShadowR)"/>
+  </g>
+
+  <!-- Grease trough -->
+  <rect x="56" y="740" width="1488" height="50" fill="url(#trough)"/>
+  <rect x="56" y="740" width="1488" height="2" fill="#000" opacity="0.8"/>
+  <rect x="56" y="766" width="1488" height="3" fill="#8a7a5a" opacity="0.35"/>
+  <ellipse cx="1480" cy="765" rx="26" ry="11" fill="#050505"/>
+  <ellipse cx="1480" cy="762" rx="26" ry="5" fill="#2b2a28" opacity="0.8"/>
+
+  <!-- Front ledge -->
+  <rect x="0" y="790" width="1600" height="110" fill="url(#ledge)"/>
+  <rect x="0" y="790" width="1600" height="110" filter="url(#brushed)" style="mix-blend-mode:overlay"/>
+  <rect x="0" y="790" width="1600" height="3" fill="#eef0f2" opacity="0.8"/>
+  <rect x="0" y="894" width="1600" height="6" fill="#3b3f43"/>
+
+  <!-- Knobs -->
+  <g id="knobs">
+    <g transform="translate(300 846)">
+      <circle r="36" fill="#000" opacity="0.35" transform="translate(3 5)"/>
+      <circle r="36" fill="url(#bezel)"/>
+      <circle r="28" fill="url(#knob)"/>
+      <rect x="-3" y="-26" width="6" height="18" rx="2" fill="#d8d8d8" transform="rotate(-35)"/>
+    </g>
+    <g transform="translate(650 846)">
+      <circle r="36" fill="#000" opacity="0.35" transform="translate(3 5)"/>
+      <circle r="36" fill="url(#bezel)"/>
+      <circle r="28" fill="url(#knob)"/>
+      <rect x="-3" y="-26" width="6" height="18" rx="2" fill="#d8d8d8" transform="rotate(20)"/>
+    </g>
+    <g transform="translate(1000 846)">
+      <circle r="36" fill="#000" opacity="0.35" transform="translate(3 5)"/>
+      <circle r="36" fill="url(#bezel)"/>
+      <circle r="28" fill="url(#knob)"/>
+      <rect x="-3" y="-26" width="6" height="18" rx="2" fill="#d8d8d8" transform="rotate(-10)"/>
+    </g>
+    <g transform="translate(1320 846)">
+      <circle r="36" fill="#000" opacity="0.35" transform="translate(3 5)"/>
+      <circle r="36" fill="url(#bezel)"/>
+      <circle r="28" fill="url(#knob)"/>
+      <rect x="-3" y="-26" width="6" height="18" rx="2" fill="#d8d8d8" transform="rotate(45)"/>
+    </g>
+  </g>
+  <circle cx="120" cy="846" r="7" fill="#e0782a"/>
+  <circle cx="120" cy="846" r="12" fill="#e0782a" opacity="0.25"/>
+</svg>

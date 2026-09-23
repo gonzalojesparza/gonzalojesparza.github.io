@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Wild Wire Substation</title>
+  <meta name="description" content="Nanofabrication and circuit design projects by Gonzalo Esparza, electrical engineer.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects | Wild Wire Substation">
+  <meta property="og:description" content="Nanofabrication and circuit design projects, served layer by layer.">
+  <meta property="og:image" content="https://your-username.github.io/assets/img/og-image.png">
+  <meta name="theme-color" content="#111213">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Oswald:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <script src="js/griddle.js" defer></script>
+  <script src="js/audio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Wild Wire <span>Substation</span></a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="https://www.linkedin.com/in/gonzalo-j-esparza/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="ticket-wrap">
+    <article class="ticket">
+      <a class="back-link" href="index.html">&larr; Back to the griddle</a>
+      <header class="ticket-header">
+        <p class="kicker">Order #001 &middot; Philly Cheesesteak</p>
+        <h1>Projects</h1>
+      </header>
+
+      <!-- Example projects: replace titles, text, tags, images and links with your own. -->
+
+      <section class="project-section" aria-labelledby="fab-title">
+        <h2 id="fab-title">From the Cleanroom</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <img class="project-media" src="assets/img/projects/placeholder.svg" alt="Optical micrograph of fabricated thin-film transistors" loading="lazy">
+            <div class="project-body">
+              <h3>Thin-Film Transistor Process Flow</h3>
+              <p>Developed a multi-mask process to fabricate and characterize thin-film transistors on glass, from mask design to I-V curves.</p>
+              <ul class="tags">
+                <li>Photolithography</li>
+                <li>E-beam evaporation</li>
+                <li>RIE</li>
+                <li>Probe station</li>
+              </ul>
+              <div class="project-links">
+                <a href="#">Write-up</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-media" src="assets/img/projects/placeholder.svg" alt="SEM image of nanoscale features patterned with e-beam lithography" loading="lazy">
+            <div class="project-body">
+              <h3>Sub-100 nm E-Beam Patterning</h3>
+              <p>Tuned dose and development to pattern sub-100 nm features, then transferred them with liftoff and verified dimensions under SEM.</p>
+              <ul class="tags">
+                <li>EBL</li>
+                <li>Liftoff</li>
+                <li>SEM</li>
+                <li>AFM</li>
+              </ul>
+              <div class="project-links">
+                <a href="#">Write-up</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section" aria-labelledby="circuits-title">
+        <h2 id="circuits-title">From the Bench</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <img class="project-media" src="assets/img/projects/placeholder.svg" alt="Transimpedance amplifier PCB on a test bench" loading="lazy">
+            <div class="project-body">
+              <h3>Low-Noise Transimpedance Amplifier</h3>
+              <p>Designed, simulated and built a TIA for reading picoamp-level sensor currents, with measured noise matching simulation.</p>
+              <ul class="tags">
+                <li>LTspice</li>
+                <li>KiCad</li>
+                <li>Analog design</li>
+              </ul>
+              <div class="project-links">
+                <a href="#">Write-up</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-media" src="assets/img/projects/placeholder.svg" alt="Assembled mixed-signal data acquisition board" loading="lazy">
+            <div class="project-body">
+              <h3>Mixed-Signal DAQ Board</h3>
+              <p>Four-layer PCB pairing a precision ADC with a microcontroller to automate device measurements and stream data over USB.</p>
+              <ul class="tags">
+                <li>PCB layout</li>
+                <li>Embedded C</li>
+                <li>Python</li>
+              </ul>
+              <div class="project-links">
+                <a href="#">Write-up</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span data-year>2026</span> Gonzalo Esparza</p>
+  </footer>
+</body>
+</html>

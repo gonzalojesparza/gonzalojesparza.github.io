@@ -1,0 +1,254 @@
+.kitchen-intro {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 1.5rem;
+  text-align: center;
+}
+
+.kitchen-intro h1 {
+  margin: 0.4rem 0 0.6rem;
+  font-size: clamp(2.4rem, 7vw, 4.25rem);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.kitchen-intro p {
+  max-width: 36rem;
+  margin: 0 auto 1.25rem;
+  color: var(--muted);
+}
+
+.view-toggle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.view-toggle:hover {
+  color: var(--text);
+  border-color: var(--steel);
+}
+
+.griddle-stage {
+  padding: 0 1.25rem 3rem;
+}
+
+.griddle {
+  position: relative;
+  max-width: 1120px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.9%;
+  box-shadow:
+    0 2px 0 rgba(255, 255, 255, 0.06) inset,
+    0 30px 60px rgba(0, 0, 0, 0.6),
+    0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.griddle-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.griddle-heat {
+  position: absolute;
+  left: 3.5%;
+  right: 3.5%;
+  top: 11%;
+  bottom: 18%;
+  background: radial-gradient(ellipse at 50% 60%, rgba(255, 110, 30, 0.07), transparent 70%);
+  pointer-events: none;
+  animation: heat-pulse 5s ease-in-out infinite;
+}
+
+/* Food items. Tune positions here: left/top/width are percentages of the griddle. */
+
+.food {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.food--philly    { left: 7.5%;  top: 18%; width: 19%; }
+.food--wings     { left: 29.5%; top: 30%; width: 19%; }
+.food--friedrice { left: 51.5%; top: 18%; width: 19%; }
+.food--gyro      { left: 73.5%; top: 30%; width: 19%; }
+
+/* Cast-iron pan holding a circular crop of the photo */
+.pan {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  padding: 5.5%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 30%, #4a4846 0%, #262524 45%, #121111 100%);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.12) inset,
+    0 18px 26px rgba(0, 0, 0, 0.55),
+    0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.pan img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: filter 0.35s ease;
+  filter: saturate(0.95) brightness(0.93);
+}
+
+/* Inner lip shadow so the food sits down inside the pan */
+.pan::after {
+  content: "";
+  position: absolute;
+  inset: 5.5%;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 6px 14px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.food:hover .pan,
+.food:focus-visible .pan {
+  transform: translateY(-2%) scale(1.035);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.12) inset,
+    0 28px 36px rgba(0, 0, 0, 0.6),
+    0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.food:hover .pan img,
+.food:focus-visible .pan img {
+  filter: saturate(1.05) brightness(1.02);
+  animation: sizzle 0.12s linear infinite;
+}
+
+.food:focus-visible {
+  outline: none;
+}
+
+.food:focus-visible .pan {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+
+/* Page label, always visible */
+
+.food-label {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 0.6rem);
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.35rem 0.85rem 0.4rem;
+  white-space: nowrap;
+  text-align: center;
+  background: rgba(14, 14, 15, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.25s ease;
+  pointer-events: none;
+}
+
+.food-label-page {
+  font-family: var(--font-display);
+  font-size: clamp(0.72rem, 1.5vw, 1.05rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.food-label-dish {
+  font-family: var(--font-mono);
+  font-size: clamp(0.5rem, 0.9vw, 0.68rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.food:hover .food-label,
+.food:focus-visible .food-label {
+  border-color: var(--accent);
+}
+
+/* Steam */
+
+.steam {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 50%;
+  height: 80%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.steam i {
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  height: 55%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(235, 235, 235, 0.22), transparent 70%);
+  filter: blur(10px);
+  opacity: 0;
+  animation: steam-rise 4.5s ease-in infinite;
+}
+
+.steam i:nth-child(1) { left: 5%;  animation-delay: 0s; }
+.steam i:nth-child(2) { left: 36%; animation-delay: 1.5s; }
+.steam i:nth-child(3) { left: 66%; animation-delay: 3s; }
+
+.food:hover .steam i,
+.food:focus-visible .steam i {
+  animation-duration: 2.4s;
+}
+
+/* Click: lift off the griddle, then navigate (handled in griddle.js) */
+
+.food.cooking .pan {
+  animation: plate-up 0.4s ease-in forwards;
+}
+
+@keyframes sizzle {
+  0%, 100% { translate: 0 0; }
+  25%      { translate: 0.4px -0.3px; }
+  50%      { translate: -0.3px 0.4px; }
+  75%      { translate: 0.3px 0.3px; }
+}
+
+@keyframes steam-rise {
+  0%   { transform: translateY(0) scale(0.8); opacity: 0; }
+  25%  { opacity: 1; }
+  100% { transform: translateY(-110%) scale(1.6); opacity: 0; }
+}
+
+@keyframes plate-up {
+  0%   { transform: translateY(-2%) scale(1.035); }
+  100% { transform: translateY(-8%) scale(1.12); opacity: 0.6; }
+}
+
+@keyframes heat-pulse {
+  0%, 100% { opacity: 0.6; }
+  50%      { opacity: 1; }
+}
