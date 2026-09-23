@@ -1,46 +1,37 @@
-.tool-intro {
-  margin-top: 0;
-  color: var(--ink-muted);
-}
-
 .dropzone {
   margin: 1.5rem 0;
-  padding: 2.5rem 1.5rem;
+  padding: 2.25rem 1.5rem;
   text-align: center;
-  border: 2px dashed var(--paper-line);
+  border: 1.5px dashed var(--border);
   border-radius: var(--radius);
-  background: #fff;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
 .dropzone.is-over {
-  border-color: var(--accent);
-  background: #fdf6ee;
+  border-color: var(--link-hover);
+  background: var(--surface);
+}
+
+.dropzone:focus-within {
+  outline: 2px solid var(--link-hover);
+  outline-offset: 2px;
 }
 
 .dropzone-title {
-  margin: 0 0 0.35rem;
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  margin: 0 0 0.25rem;
+  font-weight: 600;
 }
 
 .dropzone-hint {
   margin: 0;
   font-size: 0.9rem;
-  color: var(--ink-muted);
+  color: var(--muted);
 }
 
 .dropzone-browse {
-  color: var(--accent-dark);
   text-decoration: underline;
+  text-underline-offset: 3px;
   cursor: pointer;
-}
-
-.dropzone:focus-within {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
 }
 
 .tool-toolbar {
@@ -58,11 +49,8 @@
 
 .tool-count {
   margin: 0;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 .tool-toolbar-actions {
@@ -71,14 +59,14 @@
 }
 
 .btn-small {
-  padding: 0.4rem 0.8rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
 }
 
 .img-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.9rem;
   margin: 0 0 1.5rem;
   padding: 0;
   list-style: none;
@@ -88,12 +76,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border: 1px solid var(--paper-line);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
   cursor: grab;
-  transition: box-shadow 0.2s ease, opacity 0.2s ease;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
 }
 
 .img-item.is-dragging {
@@ -101,7 +88,7 @@
 }
 
 .img-item.is-target {
-  box-shadow: 0 0 0 2px var(--accent);
+  border-color: var(--link-hover);
 }
 
 .img-thumb {
@@ -109,8 +96,7 @@
   place-items: center;
   aspect-ratio: 1;
   padding: 0.5rem;
-  background:
-    repeating-conic-gradient(#f1efea 0% 25%, #fff 0% 50%) 50% / 16px 16px;
+  background: var(--surface);
   overflow: hidden;
 }
 
@@ -118,30 +104,29 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  transition: transform 0.25s ease;
+  transition: transform 0.2s ease;
   pointer-events: none;
 }
 
 .img-index {
   position: absolute;
-  top: 0.4rem;
-  left: 0.4rem;
-  min-width: 1.6rem;
-  padding: 0.05rem 0.4rem;
-  font-family: var(--font-mono);
+  top: 0.35rem;
+  left: 0.35rem;
+  min-width: 1.5rem;
+  padding: 0 0.35rem;
+  font-family: var(--mono);
   font-size: 0.72rem;
   text-align: center;
   color: #fff;
-  background: var(--ink);
-  border-radius: 2px;
+  background: var(--grad);
+  border-radius: 3px;
 }
 
 .img-name {
   margin: 0;
   padding: 0.4rem 0.6rem 0;
-  font-size: 0.75rem;
-  color: var(--ink-muted);
+  font-size: 0.78rem;
+  color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -150,16 +135,16 @@
 .img-controls {
   display: flex;
   justify-content: space-between;
-  padding: 0.3rem 0.35rem 0.4rem;
+  padding: 0.25rem 0.3rem 0.35rem;
 }
 
 .img-controls button {
   display: grid;
   place-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: 1.9rem;
+  height: 1.9rem;
   padding: 0;
-  color: var(--ink-muted);
+  color: var(--muted);
   background: transparent;
   border: 0;
   border-radius: var(--radius);
@@ -167,8 +152,8 @@
 }
 
 .img-controls button:hover:not(:disabled) {
-  color: var(--ink);
-  background: var(--paper);
+  color: var(--fg);
+  background: var(--surface);
 }
 
 .img-controls button:disabled {
@@ -188,12 +173,8 @@
 
 .tool-settings {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
-  padding: 1.25rem;
-  background: #fff;
-  border: 1px solid var(--paper-line);
-  border-radius: var(--radius);
 }
 
 .tool-settings label {
@@ -203,22 +184,19 @@
 }
 
 .tool-settings span {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
+  font-size: 0.82rem;
+  color: var(--muted);
 }
 
 .tool-settings select,
 .tool-settings input {
   width: 100%;
-  padding: 0.5rem 0.6rem;
+  padding: 0.45rem 0.55rem;
   font: inherit;
   font-size: 0.92rem;
-  color: var(--ink);
-  background: var(--paper);
-  border: 1px solid var(--paper-line);
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
 }
 
@@ -226,34 +204,20 @@
   opacity: 0.5;
 }
 
-.tool-settings select:focus-visible,
-.tool-settings input:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 1px;
-}
-
 .tool-actions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.btn:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  background: var(--ink);
-  border-color: var(--ink);
+  margin-top: 1.75rem;
 }
 
 .tool-status {
   margin: 0;
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  color: var(--ink-muted);
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 .tool-status.is-error {
-  color: #b3261e;
+  color: #dc2626;
 }

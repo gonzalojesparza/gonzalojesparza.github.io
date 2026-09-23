@@ -4,37 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gonzalo Esparza, Electrical Engineer</title>
-  <meta name="description" content="Portfolio of Gonzalo Esparza, an electrical engineer specializing in nanofabrication and circuit design.">
+  <meta name="description" content="Gonzalo Esparza, electrical engineer specializing in nanofabrication and circuit design.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Wild Wire Substation | Gonzalo Esparza">
-  <meta property="og:description" content="Electrical engineer specializing in nanofabrication and circuits.">
+  <meta property="og:title" content="Gonzalo Esparza">
+  <meta property="og:description" content="Electrical engineer specializing in nanofabrication and circuit design.">
   <meta property="og:image" content="https://your-username.github.io/assets/img/og-image.png">
-  <meta name="theme-color" content="#111213">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Oswald:wght@400;500&display=swap">
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/griddle.css">
-  <link rel="stylesheet" href="css/menu.css">
-  <script>
-    (function () {
-      var root = document.documentElement;
-      root.classList.add("js");
-      var saved = null;
-      try { saved = localStorage.getItem("kitchen-view"); } catch (e) {}
-      var prefersMenu = window.matchMedia("(max-width: 700px), (prefers-reduced-motion: reduce)").matches;
-      root.dataset.view = saved || (prefersMenu ? "menu" : "griddle");
-    })();
-  </script>
-  <script src="js/griddle.js" defer></script>
-  <script src="js/audio.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <a class="brand" href="index.html">Wild Wire <span>Substation</span></a>
+    <a class="brand" href="index.html">Gonzalo Esparza</a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="projects.html">Projects</a></li>
@@ -46,110 +28,49 @@
     </nav>
   </header>
 
-  <main id="main">
-    <section class="kitchen-intro">
+  <main id="main" class="page">
+    <section class="intro">
       <p class="kicker">Electrical Engineer &middot; Nanofabrication &amp; Circuit Design</p>
       <h1>Gonzalo Esparza</h1>
-      <p>Select a dish from the flat-top to continue.</p>
-      <button class="view-toggle" type="button" aria-controls="griddle menu">
-        <span class="view-toggle-to-menu">View as menu</span>
-        <span class="view-toggle-to-griddle">View the griddle</span>
-      </button>
+      <p>[One or two sentences about what you work on and what you're looking for.]</p>
     </section>
 
-    <section class="griddle-stage" id="griddle" aria-label="The griddle">
-      <div class="griddle">
-        <img class="griddle-bg" src="assets/img/griddle.svg" alt="" width="1600" height="900">
-        <div class="griddle-heat" aria-hidden="true"></div>
-
-        <a class="food food--philly" href="projects.html">
-          <span class="steam" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span class="pan"><img src="assets/img/food/philly.webp" alt="" width="800" height="800"></span>
-          <span class="food-label">
-            <span class="food-label-page">Projects</span>
-            <span class="food-label-dish">Philly Cheesesteak</span>
-          </span>
+    <ul class="link-list">
+      <li>
+        <a href="projects.html">
+          <span class="link-name">Projects</span>
+          <span class="link-desc">Research, fab work and bench builds</span>
         </a>
-
-        <a class="food food--wings" href="about.html">
-          <span class="steam" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span class="pan"><img src="assets/img/food/wings.webp" alt="" width="800" height="800"></span>
-          <span class="food-label">
-            <span class="food-label-page">About Me</span>
-            <span class="food-label-dish">Wings</span>
-          </span>
+      </li>
+      <li>
+        <a href="about.html">
+          <span class="link-name">About</span>
+          <span class="link-desc">Background, focus areas and interests</span>
         </a>
-
-        <a class="food food--friedrice" href="resume.html">
-          <span class="steam" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span class="pan"><img src="assets/img/food/friedrice.webp" alt="" width="800" height="800"></span>
-          <span class="food-label">
-            <span class="food-label-page">Resume</span>
-            <span class="food-label-dish">Beef Fried Rice</span>
-          </span>
+      </li>
+      <li>
+        <a href="resume.html">
+          <span class="link-name">Resume</span>
+          <span class="link-desc">Experience, education and skills</span>
         </a>
-
-        <a class="food food--gyro" href="https://www.linkedin.com/in/gonzalo-j-esparza/" target="_blank" rel="noopener">
-          <span class="steam" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span class="pan"><img src="assets/img/food/gyro.webp" alt="" width="800" height="800"></span>
-          <span class="food-label">
-            <span class="food-label-page">LinkedIn <span class="visually-hidden">(opens in a new tab)</span></span>
-            <span class="food-label-dish">Gyro</span>
-          </span>
+      </li>
+      <li>
+        <a href="tools.html">
+          <span class="link-name">Tools</span>
+          <span class="link-desc">Images to PDF, in your browser</span>
         </a>
-      </div>
-    </section>
-
-    <section class="menu" id="menu" aria-labelledby="menu-title">
-      <div class="menu-board">
-        <header class="menu-header">
-          <p class="kicker">Wild Wire Substation</p>
-          <h2 id="menu-title">Menu</h2>
-        </header>
-        <ul class="menu-list">
-          <li>
-            <a class="menu-item" href="projects.html">
-              <img src="assets/img/food/philly.webp" alt="" width="96" height="96" loading="lazy">
-              <span class="menu-item-text">
-                <span class="menu-item-name">Philly Cheesesteak <em>Projects</em></span>
-                <span class="menu-item-desc">Nanofabricated devices, circuit designs and the work in between.</span>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="menu-item" href="about.html">
-              <img src="assets/img/food/wings.webp" alt="" width="96" height="96" loading="lazy">
-              <span class="menu-item-text">
-                <span class="menu-item-name">Wings <em>About Me</em></span>
-                <span class="menu-item-desc">Background, focus areas and how to get in touch.</span>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="menu-item" href="resume.html">
-              <img src="assets/img/food/friedrice.webp" alt="" width="96" height="96" loading="lazy">
-              <span class="menu-item-text">
-                <span class="menu-item-name">Beef Fried Rice <em>Resume</em></span>
-                <span class="menu-item-desc">Experience, education and skills, with a downloadable PDF.</span>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="menu-item" href="https://www.linkedin.com/in/gonzalo-j-esparza/" target="_blank" rel="noopener">
-              <img src="assets/img/food/gyro.webp" alt="" width="96" height="96" loading="lazy">
-              <span class="menu-item-text">
-                <span class="menu-item-name">Gyro <em>LinkedIn</em></span>
-                <span class="menu-item-desc">Connect with me professionally. <span class="visually-hidden">(opens in a new tab)</span></span>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/gonzalo-j-esparza/" target="_blank" rel="noopener">
+          <span class="link-name">LinkedIn <span class="visually-hidden">(opens in a new tab)</span></span>
+          <span class="link-desc">linkedin.com/in/gonzalo-j-esparza</span>
+        </a>
+      </li>
+    </ul>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span data-year>2026</span> Gonzalo Esparza</p>
+    <p>&copy; 2026 Gonzalo Esparza</p>
   </footer>
 </body>
 </html>

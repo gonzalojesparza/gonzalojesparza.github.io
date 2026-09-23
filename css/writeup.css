@@ -1,69 +1,49 @@
-.writeup {
-  max-width: 44rem;
-}
-
 .writeup-summary {
   margin: 0 0 2rem;
-  font-size: 1.12rem;
-  color: var(--ink-muted);
+  font-size: 1.1rem;
+  color: var(--muted);
 }
 
 .at-a-glance {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1px;
+  gap: 1rem 1.5rem;
   margin: 0 0 2rem;
-  background: var(--paper-line);
-  border: 1px solid var(--paper-line);
-}
-
-.at-a-glance div {
-  padding: 0.85rem 1rem;
-  background: #fff;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .at-a-glance dt {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
 .at-a-glance dd {
-  margin: 0.2rem 0 0;
+  margin: 0.15rem 0 0;
   font-size: 0.95rem;
 }
 
 .toc {
   margin: 0 0 2.5rem;
-  padding: 1rem 1.25rem;
-  border-left: 3px solid var(--accent);
-  background: #fff;
+  padding-left: 1rem;
+  border-left: 2px solid;
+  border-image: var(--grad) 1;
 }
 
 .toc p {
-  margin: 0 0 0.4rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
+  margin: 0 0 0.3rem;
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
 .toc ol {
   margin: 0;
-  padding-left: 1.25rem;
+  padding-left: 1.2rem;
 }
 
 .toc a {
-  color: var(--ink);
   text-decoration: none;
-}
-
-.toc a:hover {
-  color: var(--accent-dark);
-  text-decoration: underline;
 }
 
 .writeup h2 {
@@ -71,8 +51,7 @@
 }
 
 .writeup h3 {
-  margin: 1.75rem 0 0.5rem;
-  font-size: 1.1rem;
+  margin-top: 1.75rem;
 }
 
 .writeup figure {
@@ -81,37 +60,36 @@
 
 .writeup figure img {
   width: 100%;
-  border: 1px solid var(--paper-line);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: #fff;
+  background: var(--surface);
 }
 
 .writeup figcaption {
   margin-top: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--ink-muted);
+  font-size: 0.88rem;
+  color: var(--muted);
 }
 
 .writeup figcaption strong {
-  font-family: var(--font-mono);
-  font-weight: 500;
-  color: var(--ink);
+  color: var(--fg);
+  font-weight: 600;
 }
 
 .writeup pre {
   margin: 1.5rem 0;
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.2rem;
   overflow-x: auto;
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-family: var(--mono);
+  font-size: 0.86rem;
   line-height: 1.55;
-  color: var(--text);
-  background: var(--bg-raised);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
 }
 
 .writeup code {
-  font-family: var(--font-mono);
+  font-family: var(--mono);
   font-size: 0.9em;
 }
 
@@ -124,35 +102,28 @@
   width: 100%;
   border-collapse: collapse;
   font-size: 0.92rem;
-  background: #fff;
 }
 
 .writeup caption {
   margin-bottom: 0.5rem;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   text-align: left;
-  color: var(--ink-muted);
+  color: var(--muted);
 }
 
 .writeup th,
 .writeup td {
-  padding: 0.55rem 0.8rem;
+  padding: 0.5rem 0.75rem;
   text-align: left;
-  border: 1px solid var(--paper-line);
+  border-bottom: 1px solid var(--border);
 }
 
 .writeup th {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
-  background: var(--paper);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 .writeup-footer {
   margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--paper-line);
 }
