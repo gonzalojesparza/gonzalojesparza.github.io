@@ -16,7 +16,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <a class="brand" href="index.html">Gonzalo Esparza</a>
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5.5h4V20"/></svg></span><span class="brand-name">Gonzalo Esparza</span></a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="projects.html">Projects</a></li>
@@ -39,45 +39,100 @@
         <a class="btn secondary" href="assets/resume.pdf" target="_blank" rel="noopener">Open in new tab</a>
       </div>
 
-      <object class="resume-embed" data="assets/resume.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" type="application/pdf" aria-label="Resume PDF">
-        <p>Your browser can't display the PDF here. <a href="assets/resume.pdf">Download it instead.</a></p>
-      </object>
+      <div class="resume-layout">
+        <object class="resume-embed" data="assets/resume.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" type="application/pdf" aria-label="Resume PDF">
+          <p>Your browser can't display the PDF here. <a href="assets/resume.pdf">Download it instead.</a></p>
+        </object>
 
-      <!-- Text version for recruiters, screen readers and search engines. Keep in sync with the PDF. -->
-      <section class="resume-text" aria-labelledby="resume-summary">
-        <h2 id="resume-summary">At a Glance</h2>
-        <p>
-          Electrical engineer specializing in nanofabrication and circuit design,
-          with hands-on cleanroom experience and a track record of taking devices
-          from process development through board-level test.
-        </p>
+        <!-- Text version for recruiters, screen readers and search engines. Keep in sync with the PDF. -->
+        <section class="resume-text" aria-labelledby="resume-education">
+          <h2 id="resume-education">Education</h2>
+          <h3>Massachusetts Institute of Technology</h3>
+          <p class="meta">September 2022 &ndash; May 2027 (Anticipated Graduation)</p>
+          <ul>
+            <li>
+              M.Eng., Electrical Engineering and Computer Science &ndash; expected May 2027
+              <ul>
+                <li>Thesis: Compact EUV Light Source by High Harmonic Generation</li>
+                <li>Advisor: Doctor Keathley, Quantum Nanostructures Nanofabrication Group</li>
+              </ul>
+            </li>
+            <li>B.S., Electrical Engineering and Computer Science and B.S., Chemical Engineering &ndash; received May 2026</li>
+            <li>
+              Relevant Coursework: Digital Circuit Analysis and Design, Solid-State Circuits, Silicon Photonics,
+              CMOS Analog and Mixed-Signal Circuit Design, Engineering for Impact, Semiconductor Electronic Circuits,
+              Nano Processing Technology, Software Design &amp; Construction, Algorithms, Computation Structures,
+              Engineering, Structures, Machine Learning, Organic Chemistry, Thermodynamics, Fluid Mechanics,
+              Transport Processes
+            </li>
+            <li>GPA: 4.7/5.0</li>
+          </ul>
 
-        <h2>Experience</h2>
-        <h3>Job Title, Company</h3>
-        <p class="meta">Month Year &ndash; Present &middot; City, State</p>
-        <ul>
-          <li>Accomplishment with a measurable result.</li>
-          <li>Process or design you owned, and the tools you used.</li>
-        </ul>
+          <h2>Work Experience</h2>
+          <h3>Quantum Nanostructures and Nanofabrication Group &middot; <em>Research Assistant</em></h3>
+          <p class="meta">June 2026 &ndash; May 2027</p>
+          <ul>
+            <li>Developing a process for the consistent fabrication of an optical device with a critical dimension 25 nanometers</li>
+            <li>Developing an optical and electrical setup, in and out of vacuum to characterize device performance</li>
+          </ul>
 
-        <h3>Research Assistant, University Nanofabrication Lab</h3>
-        <p class="meta">Month Year &ndash; Month Year</p>
-        <ul>
-          <li>Accomplishment with a measurable result.</li>
-        </ul>
+          <h3>Analog Devices Inc. &middot; <em>Process Engineer Intern</em></h3>
+          <p class="meta">June 2025 &ndash; May 2026</p>
+          <ul>
+            <li>Engineered fabrication processes in MIT.nano cleanroom for consistent device results</li>
+            <li>Simulated implantation with TRIMS to maximize desired characteristics.</li>
+            <li>Performed contractor and supplier outreach to perform critical processing steps and procure raw materials</li>
+            <li>Developed data extraction and visualization program to verify the specifications of commercial off the shelf components</li>
+          </ul>
 
-        <h2>Education</h2>
-        <h3>B.S./M.S. Electrical Engineering, University</h3>
-        <p class="meta">Graduation Year</p>
+          <h3>The Hammond Lab &middot; <em>Undergraduate Research Assistant</em></h3>
+          <p class="meta">February 2023 &ndash; December 2023</p>
+          <ul>
+            <li>Synthesized and tested organic polymers as chemical hemostats for severe internal bleeding for studies conducted at Massachusetts General Hospital</li>
+            <li>Characterized and optimized immunotherapeutic nanoparticles used in treatment of ovarian cancer</li>
+          </ul>
 
-        <h2>Skills</h2>
-        <ul>
-          <li><strong>Fabrication:</strong> photolithography, EBL, PVD/CVD, ALD, RIE, wet etch</li>
-          <li><strong>Characterization:</strong> SEM, AFM, ellipsometry, probe station</li>
-          <li><strong>Circuits:</strong> SPICE, KiCad/Altium, analog and mixed-signal design</li>
-          <li><strong>Software:</strong> Python, MATLAB, C</li>
-        </ul>
-      </section>
+          <h2>Projects</h2>
+          <h3>Coherent EUV Source</h3>
+          <p class="meta">Lithography, PVD, CVD, Diffusion, AFM, SEM &middot; June 2026 &ndash; May 2027</p>
+          <ul>
+            <li>Utilizing electron beam lithography to expose grating features with critical dimension of 25 nm</li>
+            <li>Characterizing grating quality using scanning electron microscopy and atomic force microscopy</li>
+            <li>Engineering device geometry to maximize light generation and efficiency</li>
+          </ul>
+
+          <h3>Novel High Voltage Transistor</h3>
+          <p class="meta">Lithography, PVD, Diffusion, SEM, TEM &middot; June 2025 &ndash; May 2026</p>
+          <ul>
+            <li>Optimized metallization parameters to minimize contact resistance</li>
+            <li>Utilized rapid thermal annealing to adjust optimize interface interaction between different metals and substrate</li>
+          </ul>
+
+          <h3>Park Occupancy Monitor</h3>
+          <p class="meta">Circuit Design, PCB layout, Power Management &middot; February 2026 &ndash; May 2026</p>
+          <ul>
+            <li>Developed and prototyped infrared break-beam turnstile concept</li>
+            <li>Evaluated power consumption and established power budget</li>
+            <li>Constructed and deployed eight systems at Hoyt Park</li>
+          </ul>
+
+          <h3>Amplifier Integrated Circuit</h3>
+          <p class="meta">Circuit Design, Semiconductor Layout &middot; February 2026 &ndash; May 2026</p>
+          <ul>
+            <li>Designed amplifier circuit and laid out a corresponding semiconductor layout</li>
+            <li>Passing DRC and LVS with 29.6dB gain, 176.2&micro;W consumption, and 365.5ps propogation delay</li>
+          </ul>
+
+          <h2>Skills</h2>
+          <ul>
+            <li><strong>Programming Languages:</strong> Python (gdsfactory, numpy, matplotlib), MATLAB, TypeScript, C</li>
+            <li><strong>Fabrication:</strong> Optical and Electron Beam Lithography, Physical Deposition, Chemical Deposition, Thermal Diffusion</li>
+            <li><strong>Characterization:</strong> Scanning Electron Microscopy, Atomic Force Microscopy, Transmission Electron Microscopy</li>
+            <li><strong>Software:</strong> KLayout, KiCad, Cadence Virtuoso, Git, Bash, VS Code</li>
+            <li><strong>Experimentation:</strong> Class 4 Laser handling, Vacuum System Design and Maintenance, Optical Experiment Design</li>
+          </ul>
+        </section>
+      </div>
     </article>
   </main>
 

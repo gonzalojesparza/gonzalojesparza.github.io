@@ -16,7 +16,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <a class="brand" href="index.html">Gonzalo Esparza</a>
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5.5h4V20"/></svg></span><span class="brand-name">Gonzalo Esparza</span></a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="projects.html" aria-current="page">Projects</a></li>
@@ -34,90 +34,138 @@
         <h1>Projects</h1>
       </header>
 
-      <section class="project-section" aria-labelledby="lab-title">
-        <h2 id="lab-title">Research</h2>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-body">
-              <p class="project-status project-status--progress">In progress</p>
-              <h3>HHG Coherent EUV Source</h3>
-              <p>
-                Developing a tabletop coherent extreme-ultraviolet source based on
-                high-harmonic generation. [One or two sentences: your role and the
-                current stage of the build.]
-              </p>
-              <ul class="tags">
-                <li>High-harmonic generation</li>
-                <li>EUV</li>
-                <li>Ultrafast optics</li>
-                <li>Vacuum systems</li>
-              </ul>
-            </div>
-          </article>
+      <div class="project-grid">
+        <article class="project-card">
+          <img class="project-media" src="assets/img/projects/QNNlogo.png" alt="Quantum Nanostructures and Nanofabrication Group logo" loading="lazy">
+          <div class="project-body">
+            <p class="project-status project-status--progress">In progress</p>
+            <h3>HHG Coherent EUV Source</h3>
+            <p class="project-org">MIT Quantum Nanostructures and Nanofabrication Group</p>
+            <p>
+              Developing a tabletop coherent extreme-ultraviolet source based on
+              high-harmonic generation. Specifically engineering the process of nanoantenna fabrication and HSQ grating fabrication.
+              Developing experimental setups to measure the efficiency of the EUV source.
+            </p>
+            <ul class="tags">
+              <li>High-harmonic generation</li>
+              <li>EUV</li>
+              <li>Ultrafast optics</li>
+              <li>Optical Experiment Design</li>
+              <li>Vacuum systems</li>
+            </ul>
+          </div>
+        </article>
 
-          <article class="project-card">
-            <div class="project-body">
-              <p class="project-status project-status--nda">Under NDA</p>
-              <h3>Novel High-Voltage Transistor</h3>
-              <p>
-                Fabricated and characterized a novel high-voltage transistor in the
-                cleanroom. [One sentence you're cleared to share, e.g. your role or
-                the general goal.] Details are under NDA.
-              </p>
-              <ul class="tags">
-                <li>Device fabrication</li>
-                <li>High voltage</li>
-                <li>Electrical characterization</li>
-              </ul>
+        <article class="project-card">
+          <img class="project-media" src="assets/img/projects/breakBeam.png" alt="IR break-beam people counter mounted in a doorway" loading="lazy">
+          <div class="project-body">
+            <h3>IR Break-Beam People Counter</h3>
+            <p class="project-org">Engineering For Impact, MIT</p>
+            <p>
+              An entryway people counter using two infrared break beams to detect
+              entering and exiting people. In a team of 8 we fully designed, built,
+              and deployed the system at Hoyt Park in Cambridge, MA.
+              Achieved 5% error in counting crossings over a 1 hour period, while consuming
+              only 20mW of power averaged across a day. I specifically participated in the
+              circuit design, power management, PCB design, testing, and deployment.
+            </p>
+            <ul class="tags">
+              <li>Circuit design</li>
+              <li>Power management</li>
+              <li>PCB design</li>
+            </ul>
+            <div class="project-links">
+              <a href="writeup.html?doc=people-counter">View the final presentation (PDF)</a>
             </div>
-          </article>
-        </div>
-      </section>
+          </div>
+        </article>
 
-      <section class="project-section" aria-labelledby="bench-title">
-        <h2 id="bench-title">Builds</h2>
-        <div class="project-grid">
-          <article class="project-card">
-            <img class="project-media" src="assets/img/projects/placeholder.svg" alt="IR break-beam people counter mounted in a doorway" loading="lazy">
-            <div class="project-body">
-              <h3>IR Break-Beam People Counter</h3>
-              <p>
-                A doorway counter that uses infrared break beams to detect people
-                passing through and tell which direction they're going.
-                [One sentence on the result, e.g. accuracy.]
-              </p>
-              <ul class="tags">
-                <li>IR sensing</li>
-                <li>Embedded firmware</li>
-                <li>Circuit design</li>
-              </ul>
-              <div class="project-links">
-                <a href="project-people-counter.html">Read the write-up</a>
-              </div>
+        <article class="project-card">
+          <img class="project-media" src="assets/img/projects/cp_antennas.png" alt="Circularly polarized antennas under test" loading="lazy">
+          <div class="project-body">
+            <h3>Circularly Polarized Antennas</h3>
+            <p class="project-org">Electromagnetic Waves and Application, MIT</p>
+            <p>
+              Macrofabricated circularly polarized antennas using copper tape
+              on insulated boards. Optimized antenna design through simulation.
+              Measured the circular polarization of the antennas using a vector network analyzer.
+              Achieved a 7.8dB improvement in axial ratio.
+            </p>
+            <ul class="tags">
+              <li>Antenna design</li>
+              <li>RF measurement</li>
+              <li>Fabrication</li>
+            </ul>
+            <div class="project-links">
+              <a href="writeup.html?doc=cp-antennas">Read the write-up (PDF)</a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="project-card">
-            <img class="project-media" src="assets/img/projects/placeholder.svg" alt="Circularly polarized antennas under test" loading="lazy">
-            <div class="project-body">
-              <h3>Circularly Polarized Antennas</h3>
-              <p>
-                Macrofabricated circularly polarized antennas, evaluated for how
-                well the link holds up as the antennas rotate relative to each other.
-                [One sentence on the key finding.]
-              </p>
-              <ul class="tags">
-                <li>Antenna design</li>
-                <li>RF measurement</li>
-                <li>Fabrication</li>
-              </ul>
-              <div class="project-links">
-                <a href="project-cp-antennas.html">Read the write-up</a>
-              </div>
+        <article class="project-card">
+          <div class="project-body">
+            <h3>RTL Logic with Thin-Film Transistors</h3>
+            <p class="project-org">Micro/Nano Processing, MIT</p>
+            <p>
+              Fabricated thin-film transistor logic in MIT.nano cleanroom.
+              Designed and fabricated basic logic gates using RTL logic.
+              Evaluated using probe station.
+            </p>
+            <ul class="tags">
+              <li>TFT fabrication</li>
+              <li>Optical Lithography</li>
+              <li>Digital logic</li>
+              <li>Electrical characterization</li>
+            </ul>
+            <div class="project-links">
+              <a href="writeup.html?doc=rtl-tft">Read the write-up (PDF)</a>
             </div>
-          </article>
-        </div>
-      </section>
+          </div>
+        </article>
+
+        
+        <article class="project-card">
+          <img class="project-media" src="assets/img/projects/ADIlogo.png" alt="Analog Devices logo" loading="lazy">
+          <div class="project-body">
+            <p class="project-status project-status--nda">Under NDA</p>
+            <h3>Novel High-Voltage Transistor</h3>
+            <p class="project-org">Analog Devices Inc.</p>
+            <p>
+              Fabricated and characterized a novel high-voltage transistor in the
+              cleanroom. Focused specifically on material stack optimization, and
+              electrical and physical characterization of the device. Details are under NDA.
+            </p>
+            <ul class="tags">
+              <li>Device fabrication</li>
+              <li>High Voltage Devices</li>
+              <li>Electrical characterization</li>
+              <li>Optical Lithography</li>
+              <li>Physical and Chemical Deposition</li>
+              <li>Scanning Electron Microscopy</li>
+              <li>Transmission Electron Microscopy</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
+            <h3>Differential Amplifier</h3>
+            <p class="project-org">Semiconductor Electronic Circuits, MIT</p>
+            <p>
+              Designed and laid out a differential amplifier using Cadence Virtuoso and a modern TSMC pdk.
+              Simulated the amplifier for various different parameters. 
+              Passed DRC and LVS with 29.6dB gain, 176.2µW consumption, and 365.5ps propogation delay.
+              Cannot publically share the layout or write-up due to NDA :(.
+            </p>
+            <ul class="tags">
+              <li>Analog circuit design</li>
+              <li>Circuit simulation</li>
+              <li>Semiconductor Layout</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
     </article>
   </main>
 

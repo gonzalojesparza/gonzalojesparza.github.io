@@ -6,13 +6,13 @@ Plain HTML and CSS with no build step, hosted on GitHub Pages.
 
 - `index.html`: home
 - `about.html`
-- `projects.html`, with write-ups in `project-people-counter.html` and `project-cp-antennas.html`
+- `projects.html`, with PDF write-ups shown by `writeup.html?doc=<key>` (PDFs go in `assets/writeups/`, keys are listed in `js/writeup.js`)
 - `resume.html`: embeds `assets/resume.pdf`
 - `tools.html`: images-to-PDF converter (`js/img2pdf.js`). It runs entirely in the browser and uploads nothing.
 
 ## Styling
 
-All shared styles are in `css/base.css`. Colors are CSS variables at the top of that file, with a separate set for dark mode. The purple-to-blue gradient (`--grad`) is applied to the site name, `h1` and `h2`. `css/writeup.css` styles the project write-ups, and `css/tools.css` styles the converter.
+All shared styles are in `css/base.css`. Colors are CSS variables at the top of that file, with a separate set for dark mode. The purple-to-blue gradient (`--grad`) is applied to the site name, `h1` and `h2`. `css/tools.css` styles the converter.
 
 ## Preview locally
 
